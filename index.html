@@ -45,10 +45,11 @@ a{color:inherit;text-decoration:none}
 /* Beta sticker */
 .beta{display:inline-block;background:#c0392b;color:#fff;font-size:.7rem;padding:3px 10px;border-radius:12px;transform:rotate(-5deg);margin-right:8px;font-weight:600}
 
-/* TV frame */
-.tv-frame{max-width:640px;margin:40px auto;position:relative;background:#111;border-radius:20px;padding:20px 20px 40px;box-shadow:0 8px 40px rgba(0,0,0,.3)}
-.tv-frame::after{content:'';position:absolute;bottom:12px;left:50%;transform:translateX(-50%);width:40px;height:4px;background:#333;border-radius:2px}
-.tv-frame iframe{width:100%;aspect-ratio:16/9;border:none;border-radius:4px;display:block}
+/* TV frame - retro CRT */
+.tv-frame{max-width:640px;margin:40px auto;position:relative;background:linear-gradient(145deg,#2a2a2a,#1a1a1a,#0d0d0d);border-radius:24px;padding:28px 28px 52px;box-shadow:0 8px 40px rgba(0,0,0,.4),inset 0 1px 0 rgba(255,255,255,.05)}
+.tv-frame::before{content:'';position:absolute;bottom:16px;left:50%;transform:translateX(-50%);display:flex;gap:12px;width:60px}
+.tv-frame::after{content:'';position:absolute;bottom:18px;left:50%;transform:translateX(-50%);width:10px;height:10px;background:radial-gradient(circle,#c0392b,#8b0000);border-radius:50%;box-shadow:24px 0 0 #333,-24px 0 0 #333,0 0 6px rgba(192,57,43,.4)}
+.tv-frame iframe{width:100%;aspect-ratio:16/9;border:none;border-radius:12px;display:block;box-shadow:inset 0 0 30px rgba(0,0,0,.5)}
 
 /* Theme box */
 .theme-box{border:1px solid #ddd;padding:32px;text-align:center;margin:40px auto;max-width:500px;border-radius:2px}
@@ -103,7 +104,7 @@ a{color:inherit;text-decoration:none}
 
 /* Jung bg */
 .jung-section{position:relative}
-.jung-section::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(40,20,10,.3),transparent 70%);pointer-events:none}
+.jung-section::before{content:'';position:absolute;inset:0;background:url('https://mishka.co.il/wp-content/uploads/2025/10/jung07-ec55cf6b83af7c3f2227c7851fba9d36f85a29a9.jpg') center/cover no-repeat;opacity:.12;pointer-events:none;border-radius:8px}
 
 /* Not section */
 .not-section{background:#fafafa;padding:60px 0}
@@ -121,8 +122,9 @@ a{color:inherit;text-decoration:none}
 .settings-code .setting-expand{max-height:0;overflow:hidden;transition:max-height .4s;color:#888;font-family:'Assistant',sans-serif;font-size:.85rem;line-height:1.7;padding:0 16px}
 .settings-code .setting-line.open + .setting-expand{max-height:3000px;padding:12px 16px}
 
-/* Logistics */
-.logistics{background:linear-gradient(135deg,#f5efe6,#ebe3d5);padding:80px 0}
+/* Logistics - wood texture */
+.logistics{background:linear-gradient(135deg,#f5efe6,#ebe3d5);padding:80px 0;position:relative}
+.logistics::before{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg width='200' height='200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='w'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.02 .15' numOctaves='5' seed='2'/%3E%3CfeColorMatrix values='0 0 0 0 .55 0 0 0 0 .4 0 0 0 0 .28 0 0 0 .08 0'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23w)'/%3E%3C/svg%3E");pointer-events:none}
 .logistics .stitle{color:#4a3728}
 
 /* Form */
@@ -228,9 +230,9 @@ footer{text-align:center;padding:40px 24px;font-size:.85rem;color:#aaa;border-to
 גם מחוצה לנו, במבנה של הקולקטיבי שאנחנו מסכימים להחזיק כחברה וכאנושות<br>
 וגם בתוך המטריקסים הפרטיים והפנימיים שלנו.</p>
 
-<!-- Cosmos embed -->
+<!-- Cosmos embed - animated gif/video -->
 <div style="text-align:center;margin:32px 0">
-<iframe src="https://www.cosmos.so/e/2071975698" style="width:100%;max-width:480px;height:300px;border:none;border-radius:8px" loading="lazy"></iframe>
+<video src="https://cdn.cosmos.so/055a7b06-1e2c-4990-9bfa-a25629a6ba13.mp4" autoplay muted loop playsinline style="width:100%;max-width:480px;border-radius:8px"></video>
 </div>
 
 <p>משהו מנענע לנו את עגלת התינוק שלנו ולא ממש מאפשר לנו להמשיך לישון בשקט.</p>
@@ -336,7 +338,7 @@ WHITE ROOMS שאני מזמין אותנו אליהם הם מסעות בני מ�
 <h2 class="stitle">איך זה נראה בפועל?<br><span style="font-size:.85em;color:#666">מה היא עבודת קבוצה?</span></h2>
 
 <div style="text-align:center;margin:32px 0">
-<iframe src="https://www.cosmos.so/e/566120396" style="width:100%;max-width:500px;height:320px;border:none;border-radius:8px" loading="lazy"></iframe>
+<img src="https://cdn.cosmos.so/cf742ee7-f662-4007-b100-47a9ba2934b0?format=jpeg&w=1200" alt="אינפוגרפיקה - איך זה נראה בפועל" style="width:100%;max-width:500px;border-radius:8px" loading="lazy">
 </div>
 
 <p>כל אחד מאיתנו מגיע כאנטנה עם המטען הפרטי שלו;<br>
@@ -736,7 +738,7 @@ WHITE ROOMS שאני מזמין אותנו אליהם הם מסעות בני מ�
 <p class="tc" style="margin-top:24px;font-size:.9rem;color:#888">*מוזמנים לשלוח הודעה למספר <a href="https://wa.me/9720525382793" style="color:#a0ffa0">052-538-2793</a> לשאלות ספציפיות</p>
 
 <div style="text-align:center;margin-top:32px">
-<iframe src="https://www.cosmos.so/e/106005443" style="width:100%;max-width:400px;height:250px;border:none;border-radius:8px" loading="lazy"></iframe>
+<img src="https://cdn.cosmos.so/2576c486-a2cd-41b3-b584-4901f3236274?format=jpeg&w=1200" alt="" style="width:100%;max-width:400px;border-radius:8px" loading="lazy">
 </div>
 </div>
 </section>
